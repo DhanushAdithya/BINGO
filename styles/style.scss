@@ -148,8 +148,8 @@ $button-text: calc(#{$heading-text} * 0.9);
         transition: 0.5s;
 
         @media (max-width: 490px) {
-            $cell-size: calc(#{$cell-size} * 0.8);
-            $cell-text: calc(#{$cell-text} * 0.8);
+            $cell-size: calc(#{$cell-size} * 0.87);
+            $cell-text: calc(#{$cell-text} * 0.87);
             border: 1px solid black;
             width: $cell-size;
             height: $cell-size;
@@ -157,8 +157,8 @@ $button-text: calc(#{$heading-text} * 0.9);
         }
 
         @media (max-width: 395px) {
-            $cell-size: calc(#{$cell-size} * 0.6);
-            $cell-text: calc(#{$cell-text} * 0.6);
+            $cell-size: calc(#{$cell-size} * 0.68);
+            $cell-text: calc(#{$cell-text} * 0.68);
             border: 0.8px solid black;
             width: $cell-size;
             height: $cell-size;

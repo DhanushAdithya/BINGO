@@ -187,18 +187,18 @@
 @media (max-width: 490px) {
   .board .cell {
     border: 1px solid black;
-    width: calc(calc(100vh * 0.13) * 0.8);
-    height: calc(calc(100vh * 0.13) * 0.8);
-    font-size: calc(calc(calc(100vh * 0.13) * 0.7) * 0.8);
+    width: calc(calc(100vh * 0.13) * 0.87);
+    height: calc(calc(100vh * 0.13) * 0.87);
+    font-size: calc(calc(calc(100vh * 0.13) * 0.7) * 0.87);
   }
 }
 
 @media (max-width: 395px) {
   .board .cell {
     border: 0.8px solid black;
-    width: calc(calc(100vh * 0.13) * 0.6);
-    height: calc(calc(100vh * 0.13) * 0.6);
-    font-size: calc(calc(calc(100vh * 0.13) * 0.7) * 0.6);
+    width: calc(calc(100vh * 0.13) * 0.68);
+    height: calc(calc(100vh * 0.13) * 0.68);
+    font-size: calc(calc(calc(100vh * 0.13) * 0.7) * 0.68);
   }
 }
 
