@@ -35,6 +35,16 @@ $button-text: calc(#{$heading-text} * 0.9);
         background-color: #59ec59;
         box-shadow: 5px 5px 0px #399c39;
 
+        @media (max-width: 490px) {
+            $button-text: calc(#{$button-text} * 0.8);
+            font-size: $button-text;
+        }
+
+        @media (max-width: 395px) {
+            $button-text: calc(#{$button-text} * 0.6);
+            font-size: $button-text;
+        }
+
         &:active {
             box-shadow: 0 0 0 #399c39;
             transform: translate(5px, 5px);
@@ -62,6 +72,24 @@ $button-text: calc(#{$heading-text} * 0.9);
         border: 8px solid transparent;
         margin: 25px 11px;
         transition: 0.5s;
+
+        @media (max-width: 490px) {
+            $heading-size: calc(#{$heading-size} * 0.8);
+            $heading-text: calc(#{$heading-text} * 0.8);
+            width: $heading-size;
+            height: $heading-size;
+            font-size: $heading-text;
+            margin: 19px 2px;
+        }
+
+        @media (max-width: 395px) {
+            $heading-size: calc(#{$heading-size} * 0.6);
+            $heading-text: calc(#{$heading-text} * 0.6);
+            width: $heading-size;
+            height: $heading-size;
+            font-size: $heading-text;
+            margin: 19px 2px;
+        }
     }
 }
 
@@ -73,6 +101,16 @@ $button-text: calc(#{$heading-text} * 0.9);
     justify-content: center;
     align-content: center;
 
+    @media (max-width: 490px) {
+        $heading-size: calc(#{$heading-size} * 0.8);
+        min-height: calc(100vh - calc(#{$heading-size} + 100px));
+    }
+
+    @media (max-width: 395px) {
+        $heading-size: calc(#{$heading-size} * 0.6);
+        min-height: calc(100vh - calc(#{$heading-size} + 100px));
+    }
+
     .strike::after {
         content: '';
         width: calc(#{$cell-text} + 17px);
@@ -80,6 +118,18 @@ $button-text: calc(#{$heading-text} * 0.9);
         background-color: black;
         position: absolute;
         transform: rotate(45deg);
+
+        @media (max-width: 490px) {
+            $cell-size: calc(#{$cell-size} * 0.8);
+            width: calc(#{$cell-text} + 12px);
+            height: 4px;
+        }
+
+        @media (max-width: 395px) {
+            $cell-size: calc(#{$cell-size} * 0.6);
+            width: calc(#{$cell-text} - 3px);
+            height: 3px;
+        }
     }
 
     .cell {
@@ -95,6 +145,24 @@ $button-text: calc(#{$heading-text} * 0.9);
         font-family: 'Montserrat', sans-serif;
         cursor: pointer;
         transition: 0.5s;
+
+        @media (max-width: 490px) {
+            $cell-size: calc(#{$cell-size} * 0.8);
+            $cell-text: calc(#{$cell-text} * 0.8);
+            border: 1px solid black;
+            width: $cell-size;
+            height: $cell-size;
+            font-size: $cell-text;
+        }
+
+        @media (max-width: 395px) {
+            $cell-size: calc(#{$cell-size} * 0.6);
+            $cell-text: calc(#{$cell-text} * 0.6);
+            border: 0.8px solid black;
+            width: $cell-size;
+            height: $cell-size;
+            font-size: $cell-text;
+        }
 
         &:disabled {
             color: black;
