@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+*,
 *::after,
 *::before {
   margin: 0;
@@ -39,12 +40,14 @@
 
 @media (max-width: 490px) {
   .overlay button {
+    width: 40%;
     font-size: calc(calc(calc(calc(calc(100vh * 0.13) * 0.7) * 0.8) * 0.9) * 0.8);
   }
 }
 
 @media (max-width: 395px) {
   .overlay button {
+    width: 40%;
     font-size: calc(calc(calc(calc(calc(100vh * 0.13) * 0.7) * 0.8) * 0.9) * 0.6);
   }
 }
@@ -57,8 +60,6 @@
 }
 
 .bingo {
-  margin: 0;
-  padding: 0;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   display: -webkit-box;

@@ -6,6 +6,7 @@ $heading-size: calc(#{$cell-size} * 0.8);
 $heading-text: calc(#{$cell-text} * 0.8);
 $button-text: calc(#{$heading-text} * 0.9);
 
+*,
 *::after,
 *::before {
     margin: 0;
@@ -36,11 +37,13 @@ $button-text: calc(#{$heading-text} * 0.9);
         box-shadow: 5px 5px 0px #399c39;
 
         @media (max-width: 490px) {
+            width: 40%;
             $button-text: calc(#{$button-text} * 0.8);
             font-size: $button-text;
         }
 
         @media (max-width: 395px) {
+            width: 40%;
             $button-text: calc(#{$button-text} * 0.6);
             font-size: $button-text;
         }
@@ -53,8 +56,6 @@ $button-text: calc(#{$heading-text} * 0.9);
 }
 
 .bingo {
-    margin: 0;
-    padding: 0;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     display: flex;
