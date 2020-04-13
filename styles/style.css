@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-*,
 *::after,
 *::before {
   margin: 0;
@@ -9,6 +8,7 @@
 }
 
 .overlay {
+  margin: 0;
   position: absolute;
   height: 100vh;
   width: 100%;
@@ -27,7 +27,7 @@
 
 .overlay button {
   width: 30%;
-  font-size: calc(calc(calc(100vh * 0.11) * .7) * .8);
+  font-size: calc(calc(calc(calc(100vh * 0.13) * 0.7) * 0.8) * 0.9);
   border-radius: 10px;
   padding: 10px 0;
   outline: none;
@@ -71,9 +71,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: calc(calc(100vh * 0.11) * .8);
-  height: calc(calc(100vh * 0.11) * .8);
-  font-size: calc(calc(calc(100vh * 0.11) * .7) * .8);
+  width: calc(calc(100vh * 0.13) * 0.8);
+  height: calc(calc(100vh * 0.13) * 0.8);
+  font-size: calc(calc(calc(100vh * 0.13) * 0.7) * 0.8);
   border-radius: 50%;
   border: 8px solid transparent;
   margin: 25px 11px;
@@ -82,7 +82,8 @@
 }
 
 .board {
-  min-height: calc(100vh - calc(calc(calc(100vh * 0.11) * .8) + 50px));
+  width: 100%;
+  min-height: calc(100vh - calc(calc(calc(100vh * 0.13) * 0.8) + 100px));
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[5];
@@ -96,7 +97,7 @@
 
 .board .strike::after {
   content: '';
-  width: calc(calc(calc(100vh * 0.11) * .7) + 17px);
+  width: calc(calc(calc(100vh * 0.13) * 0.7) + 17px);
   height: 5px;
   background-color: black;
   position: absolute;
@@ -106,10 +107,10 @@
 
 .board .cell {
   background-color: transparent;
-  width: calc(100vh * 0.11);
-  height: calc(100vh * 0.11);
+  width: calc(100vh * 0.13);
+  height: calc(100vh * 0.13);
   border: 1.2px solid black;
-  font-size: calc(calc(100vh * 0.11) * .7);
+  font-size: calc(calc(100vh * 0.13) * 0.7);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

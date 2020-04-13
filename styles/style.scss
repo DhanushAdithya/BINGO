@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-$cell-size: calc(100vh * 0.11);
-$cell-text: calc(#{$cell-size} * .7);
-$heading-size: calc(#{$cell-size} * .8);
-$heading-text: calc(#{$cell-text} * .8);
+$cell-size: calc(100vh * 0.13);
+$cell-text: calc(#{$cell-size} * 0.7);
+$heading-size: calc(#{$cell-size} * 0.8);
+$heading-text: calc(#{$cell-text} * 0.8);
+$button-text: calc(#{$heading-text} * 0.9);
 
-*,
 *::after,
 *::before {
     margin: 0;
@@ -14,6 +14,7 @@ $heading-text: calc(#{$cell-text} * .8);
 }
 
 .overlay {
+    margin: 0;
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -26,7 +27,7 @@ $heading-text: calc(#{$cell-text} * .8);
 
     button {
         width: 30%;
-        font-size: $heading-text;
+        font-size: $button-text;
         border-radius: 10px;
         padding: 10px 0;
         outline: none;
@@ -65,7 +66,8 @@ $heading-text: calc(#{$cell-text} * .8);
 }
 
 .board {
-    min-height: calc(100vh - calc(#{$heading-size} + 50px));
+    width: 100%;
+    min-height: calc(100vh - calc(#{$heading-size} + 100px));
     display: grid;
     grid-template-columns: repeat(5, auto);
     justify-content: center;
