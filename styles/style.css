@@ -96,18 +96,18 @@
 
 @media (max-width: 490px) {
   .bingo span {
-    width: calc(calc(calc(100vh * 0.13) * 0.8) * 0.8);
-    height: calc(calc(calc(100vh * 0.13) * 0.8) * 0.8);
-    font-size: calc(calc(calc(calc(100vh * 0.13) * 0.7) * 0.8) * 0.8);
+    width: calc(calc(calc(100vh * 0.13) * 0.8) * 0.85);
+    height: calc(calc(calc(100vh * 0.13) * 0.8) * 0.85);
+    font-size: calc(calc(calc(calc(100vh * 0.13) * 0.7) * 0.8) * 0.85);
     margin: 19px 2px;
   }
 }
 
 @media (max-width: 395px) {
   .bingo span {
-    width: calc(calc(calc(100vh * 0.13) * 0.8) * 0.6);
-    height: calc(calc(calc(100vh * 0.13) * 0.8) * 0.6);
-    font-size: calc(calc(calc(calc(100vh * 0.13) * 0.7) * 0.8) * 0.6);
+    width: calc(calc(calc(100vh * 0.13) * 0.8) * 0.67);
+    height: calc(calc(calc(100vh * 0.13) * 0.8) * 0.67);
+    font-size: calc(calc(calc(calc(100vh * 0.13) * 0.7) * 0.8) * 0.67);
     margin: 19px 2px;
   }
 }

@@ -75,8 +75,8 @@ $button-text: calc(#{$heading-text} * 0.9);
         transition: 0.5s;
 
         @media (max-width: 490px) {
-            $heading-size: calc(#{$heading-size} * 0.8);
-            $heading-text: calc(#{$heading-text} * 0.8);
+            $heading-size: calc(#{$heading-size} * 0.85);
+            $heading-text: calc(#{$heading-text} * 0.85);
             width: $heading-size;
             height: $heading-size;
             font-size: $heading-text;
@@ -84,8 +84,8 @@ $button-text: calc(#{$heading-text} * 0.9);
         }
 
         @media (max-width: 395px) {
-            $heading-size: calc(#{$heading-size} * 0.6);
-            $heading-text: calc(#{$heading-text} * 0.6);
+            $heading-size: calc(#{$heading-size} * 0.67);
+            $heading-text: calc(#{$heading-text} * 0.67);
             width: $heading-size;
             height: $heading-size;
             font-size: $heading-text;
