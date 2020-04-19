@@ -34,6 +34,8 @@ $button-text: calc(#{$heading-text} * 0.9);
         outline: none;
         border: 0px solid transparent;
         background-color: #59ec59;
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
         box-shadow: 5px 5px 0px #399c39;
 
         @media (max-width: 490px) {
